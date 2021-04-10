@@ -1,0 +1,116 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LAYOUT */
+
+/* HEADER */
+/* Navbar */
+
+.navbar {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(25, 28, 31);
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 0px 1rem;
+    color: rgb(26, 22, 22);
+    opacity: 0.5;
+}
+
+.navbar li a:hover {
+    opacity: 1;
+}
+
+/* Nav Left */
+.nav-left {
+    padding-left: 100px;
+}
+
+.nav-left img {
+    position: relative;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+/* Nav Right */
+.nav-right {
+    padding-right: 100px;     
+}
+
+/* Dropdown */
+.nav-right li.dropdown {
+    position: relative;
+}
+
+.nav-right li.dropdown > a {
+    font-size: 1rem;
+}
+
+.nav-right .dropdown-menu {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    right: -40px;
+    width: 150px;
+    padding: 30px 0;
+    margin-top: 5px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 5px rgba(0,0,0, .2))
+}
+
+/* Btn */
+.nav-right li form {
+    margin-left: 15px;
+}
+
+.nav-right li input[type="button"] {
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.nav-right li .signin > input {
+    color: rgb(25, 28, 31);
+    background: rgba(230, 230, 230, 0.6);
+}
+
+.nav-right li .getapp > input {
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 28, 31);
+}
+
+/* MAIN */
+main {
+    flex-grow: 1;
+}
+
+/* FOOTER */
+footer {
+    background: lightseagreen;
+}
+
